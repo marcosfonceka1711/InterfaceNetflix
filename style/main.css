@@ -44,10 +44,13 @@ header nav a:hover{
 }
 
 /*Filme principal*/
-
+.container{
+    margin-left: 30px;
+    width: 70%;
+}
 main .filme-principal{
     font-size: 16px;
-    background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50) 100%), url('/img/capa-house.jpg');
+    background: linear-gradient(rgba(0,0,0,.50), rgba(0, 0, 0, 0.5) 100%), url('/img/capa-house.jpg');
     height: 400px;/*Altura*/
     background-size: cover; /*Área de corbertura da caixa*/
     display: flex;
@@ -67,7 +70,7 @@ main .filme-principal{
 }
 
 .botao{
-    background-color: rgba(0,0,0,.50);
+    background-color: rgba(0, 0, 0, 0.5);
     border: none;
     color: white;
     padding: 15px; /*o VALORES são em formato horário: cima, direita, baixo e esquerda*/
