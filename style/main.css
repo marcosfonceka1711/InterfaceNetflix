@@ -1,0 +1,42 @@
+:root{
+    --vermelho: #E50914;
+    --preto:  #141414; 
+}
+
+*{/*Toda página, todos os elementos da página*/
+    /*Reset para valores default*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;/*Espreme os elementos dentro dos espaços disponíveis*/
+}
+
+body{
+    background: var(--preto);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/*O container tem dentro dele o Logotipo e o menu de navegação*/
+header .container{
+    border: 1px solid black;
+    display: flex;/*Joga todos os elementos em linha*/
+    flex-direction: row; /*Só a linha anterior já bastava, ao utilizar "display: flex" o navegador já dispõe em formato de linha o layout dos elementos*/
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .container .logotipo{
+    color: var(--vermelho);
+    font-family: 'Arial Black', Times;
+    font-size: 40px;
+    margin-left: 5px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 10px;
+}
+
+header nav a:hover{
+    color: #fff;
+}
